@@ -1,0 +1,17 @@
+⭐Selecting Data 
+The SELECT statement is used to select data from a table.
+
+* selects all columns of the table.
+
+Instead of *, we can specify a column that we want to select.
+
+We can specify multiple columns in the SELECT statement by separating them with commas.
+
+⭐SQL Syntax 
+You can run multiple SQL queries, by separating them with semicolons.
+
+SQL queries are also often broken down into multiple lines, to make them more readable. 
+This is possible, because newlines and whitespaces are ignored.
+
+⭐Case Sensitivity 
+SQL is case insensitive.
