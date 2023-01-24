@@ -1,0 +1,23 @@
+⭐Sorting Data 
+The ORDER BY command is used to sort the data in a SELECT statement.
+
+The ORDER BY command comes after the table name in the SELECT statement.
+
+By default, ORDER BY sorts the results in ascending order.
+
+We can specify the ordering using the ASC and DESC keywords.
+
+We can also sort the data based on multiple columns.
+
+⭐Limit 
+The SELECT statement returns all the rows in the table.
+
+In case we only need a specific number of rows from the table, we can use the LIMIT keyword.
+
+We can combine the LIMIT with ORDER BY.
+Remember, the LIMIT keyword has to come after the ORDER BY in the SELECT statement.
+
+We can also select rows starting from an offset.
+
+The first row has the offset 0, which is why OFFSET 2 will start from the 3rd row in the 
+result.
