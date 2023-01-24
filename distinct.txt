@@ -1,0 +1,6 @@
+⭐Duplicate Values 
+In some cases we might get duplicate values in the results.
+
+We can remove the duplicates using the DISTINCT keyword.
+
+The DISTINCT keyword is placed before the column name we want to select.
