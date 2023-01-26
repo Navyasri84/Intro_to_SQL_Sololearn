@@ -1,6 +1,22 @@
 ⭐Duplicate Values 
 In some cases we might get duplicate values in the results.
+SELECT city FROM Customers 
 
 We can remove the duplicates using the DISTINCT keyword.
+SELECT DISTINCT city 
+FROM Customers 
 
 The DISTINCT keyword is placed before the column name we want to select.
+SELECT DISTINCT city from Customers
+ORDER BY city ASC 
+
+⭐Example 
+Let's use everything we learned so far to create a query.
+
+We want to select the firstname and lastname of the customer with the largest age value.
+
+For that, we can select the top 1 record of our table ordered by the age column in descending order:
+
+SELECT firstname, lastname FROM Customers
+ORDER BY age DESC
+LIMIT 1
