@@ -1,0 +1,38 @@
+⭐The following comparison operators can be used in the WHERE condition:
+> greater than
+< less than
+>= greater or equal
+<= less or equal
+Eg,
+SELECT * FROM Customers
+WHERE age <= 42 
+
+⭐Equality 
+To check for equality, the equal to operator = can be used
+Eg,
+SELECT * FROM Customers
+WHERE age = 42 
+
+⭐Text Values 
+To compare with a text value, put the text value in single quotes.
+Eg,
+SELECT * FROM Customers
+WHERE firstname = 'James' 
+
+In case the value includes a single quote, (for example let's), use two single quotes: 
+'let''s'
+
+⭐Not Equal 
+The not equal operator is <>
+Eg,
+SELECT * FROM Customers 
+WHERE age <> 42 
+
+In some SQL versions, the != operator is the equivalent to <>.
+
+⭐BETWEEN 
+The BETWEEN operator can be used to select rows that are in a range of values.
+Eg,
+SELECT * FROM Customers
+WHERE age 
+BETWEEN 30 AND 50 
