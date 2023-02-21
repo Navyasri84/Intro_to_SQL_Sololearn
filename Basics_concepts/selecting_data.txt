@@ -1,0 +1,28 @@
+⭐Selecting Data 
+The SELECT statement is used to select data from a table.
+SELECT * FROM Customers
+
+* selects all columns of the table.
+
+Instead of *, we can specify a column that we want to select.
+SELECT City FROM Customers
+
+We can specify multiple columns in the SELECT statement by separating them with commas.
+SELECT firstname, lastname FROM Customers 
+
+⭐SQL Syntax 
+You can run multiple SQL queries, by separating them with semicolons.
+SELECT firstname, lastname
+  FROM Customers;
+
+SELECT firstname, city, age
+  FROM Customers; 
+
+SQL queries are also often broken down into multiple lines, to make them more readable. 
+This is possible, because newlines and whitespaces are ignored.
+
+⭐Case Sensitivity 
+SQL is case insensitive.
+select city from Customers;
+SELECT City FROM Customers;
+sElEct ciTY From Customers;
