@@ -1,0 +1,21 @@
+⭐Databases
+Data is stored in a database.
+
+A database is a collection of data that is organized in a manner that facilitates ease of access, as well as efficient management and updating. 
+
+For example, a database can be used to store information about contacts, bank accounts, people, transactions, etc. 
+
+A database is made up of tables that store relevant information.
+
+⭐SQL 
+SQL is used to access and manipulate a database. 
+
+It can be used to select & filter, add and remove data and tables, and much more.
+
+⭐Database Systems 
+There are many different database systems available. 
+
+One of the most popular database systems is MySQL.
+
+⭐Code Playground 
+We have a SQL Playground, used to write and run SQL queries.
