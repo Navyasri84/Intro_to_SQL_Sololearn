@@ -1,0 +1,19 @@
+⭐NULL 
+NULL is the absence of value.
+
+This means that any field in our table with no value with have the value NULL. 
+
+NULL is different from a zero or a space. It is the value that corresponds to a blank value. 
+
+To check for NULL values the IS NULL operator can be used.
+
+For example:
+
+SELECT * FROM Customers
+WHERE age IS NULL 
+
+This will return only those rows that have their age as NULL.
+
+Similarly, we can check for non-null values using IS NOT NULL:
+SELECT * FROM Customers 
+WHERE age IS NOT NULL
