@@ -1,0 +1,44 @@
+⭐Logical Operators 
+Conditions in the WHERE command can be combined using logical operators.
+
+The AND operator combines two conditions and is satisfied if both conditions are satisfied.
+
+SELECT * FROM Customers
+WHERE age >= 42 AND age <= 60  
+
+You can combine as many conditions as you need.
+
+⭐OR 
+Similarly, the OR operator is satisfied if any one of its conditions holds.
+
+SELECT * FROM Customers
+WHERE city = 'New York' OR city = 'Chicago' 
+
+⭐IN 
+Instead of multiple OR conditions for a single column, the IN operator can be used.
+
+The previous example can be written as following:
+SELECT * FROM Customers
+WHERE city IN ('New York', 'Chicago')  
+
+The values for the IN operator need to be in parentheses, separated by commas.
+
+⭐NOT 
+The NOT IN operator allows you to exclude a list of specific values from the result set.  
+
+SELECT * FROM Customers
+WHERE city NOT IN ('New York', 'Chicago')  
+
+This will select only the rows that don't have any of the given values for their city 
+column.
+
+⭐Multiple Conditions 
+We can combine multiple conditions using the logical operators and group them using 
+parentheses.
+
+SELECT * FROM Customers
+WHERE city = 'New York' AND
+(age > 30 OR age = 24)
+
+When combining conditions, it is important to use parentheses, so that the order to 
+evaluate each condition is known.
