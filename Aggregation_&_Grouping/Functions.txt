@@ -1,0 +1,68 @@
+⭐Functions 
+SQL supports many useful functions that we can use to perform calculations and manipulations.
+
+For example, the COUNT() function is used to return the number of records of a select statement:
+
+SELECT COUNT(*) 
+FROM Customers
+
+This will return the number of rows in the table.
+
+Note that the function is called with parentheses after its name, containing the function parameter, in this 
+case, the column name.
+
+
+We can also call the COUNT() function for a specific column. 
+
+For example, let's select the number of DISTINCT cities:
+
+SELECT COUNT(DISTINCT city)
+FROM Customers
+
+This will select the number of unique city names from the table.
+
+
+Another useful function is SUM().
+
+It returns the sum of the values in a column.
+
+For the demo, we have added a salary column to our Customers table, instead of the age column.
+
+Let's calculate the sum of all salary values in our table:
+
+SELECT SUM(salary) 
+FROM Customers
+
+NULL values are simply ignored.
+
+If you try to SUM() a text column, the result will be 0.
+
+SUM() of NULLs is NULL.
+
+
+Similar to a SELECT statement, we can define a condition for our sum.
+
+For example, let's sum only the salaries of the Customers from New York:
+
+SELECT SUM(salary)
+FROM Customers
+WHERE city = 'New York'  
+
+
+The AVG() function returns the average value of a numeric column.
+
+For example:
+
+SELECT AVG(salary)
+FROM Customers 
+
+This will result in the average salary of our data.
+
+
+MIN() and MAX() are used to return the minimum and maximum value of a column:
+
+SELECT MIN(salary)
+FROM Customers; 
+
+SELECT MAX(salary) 
+FROM Customers;
