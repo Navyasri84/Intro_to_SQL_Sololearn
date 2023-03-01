@@ -1,0 +1,44 @@
+⭐Custom Columns 
+Functions allow you to create new columns in the result table of the SELECT statement.
+
+For example, the UPPER() function can be used to convert text to uppercase.
+
+Let's apply it on our firstname column:
+
+SELECT UPPER(firstname) 
+FROM Customers 
+
+The result is a new column, which has the function as its name.
+
+
+We can provide a new name for the column with the AS keyword:
+
+SELECT UPPER(firstname) AS Name
+FROM Customers 
+
+
+Custom Columns 
+We can also create new columns by applying mathematical operations.
+
+For example, let's select the first names and the salary column multiplied by 12:
+
+SELECT UPPER(firstname) AS Name,
+salary*12 AS Annual_Salary
+FROM Customers 
+
+You can create as many custom columns as you need.
+
+If the new column name includes spaces, it needs to be enclosed in single quotes.
+
+
+We can also create new columns by applying mathematical operations.
+
+For example, let's select the first names and the salary column multiplied by 12:
+
+SELECT UPPER(firstname) AS Name,
+salary*12 AS Annual_Salary
+FROM Customers 
+
+You can create as many custom columns as you need.
+
+If the new column name includes spaces, it needs to be enclosed in single quotes.
