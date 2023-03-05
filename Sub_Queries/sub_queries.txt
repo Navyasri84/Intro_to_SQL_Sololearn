@@ -1,0 +1,39 @@
+⭐Subqueries 
+We can use the query from the previous part inside another query, like this:
+
+SELECT * 
+FROM Customers
+WHERE salary > (
+   SELECT 
+   AVG(salary)
+   FROM Customers
+) 
+
+As you can see, we used a query inside the condition.
+
+Remember, subqueries need to be enclosed in parentheses.
+
+
+Similarly, a subquery can be used with an IN.
+
+Consider a second table called Cities that includes city names.
+
+We need to select the customers that are from one of these cities:
+
+SELECT * FROM Customers
+WHERE city IN (
+  SELECT name 
+  FROM Cities
+) 
+
+
+We can also use subqueries in the SELECT column list.
+
+For example, let's make a new column with the average salary next to each row of our table:
+
+SELECT *, (SELECT AVG(salary)
+FROM Customers) AS Average
+FROM Customers 
+
+As you can see, we can use subqueries to create a new column, as well as create conditions in the WHERE 
+statement.
