@@ -1,0 +1,25 @@
+⭐Grouping 
+SQL allows to group records using the GROUP BY clause.
+
+For example, let's select the number of customers from each city in our table.
+
+SELECT city, COUNT(*)
+FROM Customers
+GROUP BY city  
+
+This query will return the number of customers in each city, as well as the city name.
+
+ 
+We can also order the results by the COUNT column:
+
+SELECT city, COUNT(*) AS c
+FROM Customers
+GROUP BY city
+ORDER BY c ASC
+
+Grouping is used with aggregate functions, which are applied to each group.
+
+
+When using the GROUP BY, we select only the column that we group by, and aggregate functions which apply to the groups.
+
+The other columns cannot be selected, as only one row per group is returned.
