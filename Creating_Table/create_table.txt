@@ -1,0 +1,74 @@
+⭐Create Table 
+A SQL database can contain hundreds of tables. 
+
+Creating a basic table involves naming the table and defining its columns and each column's data type.
+
+
+⭐Data Types 
+Table columns are responsible for storing many different types of data, including numbers, texts, dates, and even files. 
+
+Here are the names of the most common data types:
+
+INT - whole number
+FLOAT - floating point number
+DOUBLE - A double precision floating-point number.
+DATE - A date in YYYY-MM-DD format.
+DATETIME - A date and time combination in YYYY-MM-DD HH:MM:SS format.
+TIMESTAMP - A timestamp, calculated from midnight, January 1, 1970
+TIME - Stores the time in HH:MM:SS format.
+VARCHAR(M) - Variable-length character string. Max size is specified in parenthesis.
+TEXT - Large amount of text data. 
+
+It is important to set the correct data type of the columns when creating the table. 
+
+
+⭐Create Table 
+Here is an example create command for our Customers table:
+
+CREATE TABLE Customers (
+  id INT,
+  firstname VARCHAR(128),
+lastname VARCHAR(128),
+  salary INT,
+  city VARCHAR(128)
+);
+
+As you can see, each column has a name and data type.
+
+They are separated by commas.
+
+The CREATE TABLE command defined the table name and the columns list in parentheses.
+
+
+⭐Default Values 
+A column can also have a default value, which is applied to the rows when no value is provided for it.
+
+It is defined using the DEFAULT keyword:
+
+CREATE TABLE Customers (
+id INT,
+firstname VARCHAR(128),
+lastname VARCHAR(128),
+salary INT DEFAULT 0,
+city VARCHAR(128)
+); 
+
+Now, the salary column has a default value of 0.
+
+You can provide default values for multiple columns.
+
+
+⭐NULL 
+We can also specify if a column can or cannot have NULL values.
+
+For example, let's define the firstname column to be non-null:
+
+CREATE TABLE Customers (
+id INT,
+firstname VARCHAR(128) NOT NULL,
+lastname VARCHAR(128),
+salary INT DEFAULT 0,
+city VARCHAR(128)
+); 
+
+Now, when inserting data into the table, the firstname column has to have a value.
