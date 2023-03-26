@@ -1,0 +1,51 @@
+⭐Insert Data 
+When the table is created, it is empty. 
+
+We can insert data using the INSERT command.
+
+For example:
+
+INSERT INTO Customers VALUES
+(1, 'John', 'Smith', 'New York', 5000) 
+Click to run
+The values are comma-separated and their order corresponds to the columns in the table.
+
+Make sure the order of the values is in the same order as the columns in the table.
+
+
+⭐Insert Data 
+The INSERT command supports specifying the column names, making the code more readable as well as allowing to use any order for the values.
+
+For example:
+
+INSERT INTO Customers (id, lastname, firstname, city, salary)
+VALUES
+(1, 'Smith', 'John', 'New York', 5000);
+
+Remember, that the order of the values has to match the columns.
+
+
+⭐Insert Data 
+We can insert multiple rows, by separating them with commas.
+
+For example:
+
+INSERT INTO Customers (id, firstname, lastname, city, salary)
+VALUES 
+(1, 'John', 'Smith', 'New York', 5000),
+(2, 'David', 'Williams', 'Los Angeles', 4200), 
+(3, 'Chloe', 'Anderson', 'Chicago', 6500);
+
+It is important to enclose each row in parentheses.
+
+
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
