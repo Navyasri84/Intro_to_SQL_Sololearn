@@ -1,0 +1,25 @@
+⭐Remove Data 
+Similar to UPDATE, the DELETE command is used to delete rows from a table.
+
+For example, let's remove the row with ID=4:
+
+DELETE FROM Customers
+WHERE ID = 4
+
+Make sure to provide the correct condition, as all rows matching the condition will be permanently removed.
+
+
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
+⭐
