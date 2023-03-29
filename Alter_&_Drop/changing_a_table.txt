@@ -1,0 +1,9 @@
+⭐Changing a Table 
+The ALTER TABLE command is used to add, delete, or modify columns in an existing table.
+
+For example, let's add a new column to our Customers table:
+
+ALTER TABLE Customers
+ADD age INT 
+
+All rows will have the default value in the newly added column, which in this case is NULL.
