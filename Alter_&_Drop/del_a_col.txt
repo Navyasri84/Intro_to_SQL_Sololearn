@@ -1,0 +1,7 @@
+⭐Delete a Column 
+Similarly, we can delete an entire column:
+
+ALTER TABLE Customers
+DROP COLUMN city 
+
+The column, along with all of its data, will be completely removed from the table.
