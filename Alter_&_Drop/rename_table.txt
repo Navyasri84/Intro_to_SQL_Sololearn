@@ -1,0 +1,14 @@
+⭐Rename Column 
+The ALTER TABLE command can also be used to rename a column:
+
+ALTER TABLE Customers
+RENAME city TO location 
+
+
+⭐Rename Table 
+We can rename an existing table using the following:
+
+ALTER TABLE Customers 
+RENAME TO People 
+
+This will rename the table Customers to People.
